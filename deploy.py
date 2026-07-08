@@ -1,10 +1,10 @@
 import paramiko
 
-HOST="YOUR_EC2_PUBLIC_IP"
+HOST="EC2_HOST"
 
-USERNAME="ec2-user"
+USERNAME="EC2_USERNAME"
 
-KEY="aws-key.pem"
+KEY="PRIVATE_KEY"
 
 client=paramiko.SSHClient()
 
