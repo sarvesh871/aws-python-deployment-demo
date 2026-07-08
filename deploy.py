@@ -1,9 +1,9 @@
 import paramiko
 import os
 
-HOST = os.environ.get["EC2_HOST"]
-USERNAME = os.environ.get["EC2_USERNAME"]
-KEY = os.environ.get["PRIVATE_KEY"]
+HOST = os.environ["EC2_HOST"]
+USERNAME = os.environ["EC2_USERNAME"]
+KEY = os.environ["PRIVATE_KEY"]
 
 client = paramiko.SSHClient()
 client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
