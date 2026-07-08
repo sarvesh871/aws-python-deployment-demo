@@ -23,11 +23,10 @@ commands=[
 ]
 
 for command in commands:
-```
-stdin,stdout,stderr=client.exec_command(command)
-
-print(stdout.read().decode())
-```
+  ```
+    stdin,stdout,stderr=client.exec_command(command)
+    print(stdout.read().decode())
+  ```
 
 client.close()
 
